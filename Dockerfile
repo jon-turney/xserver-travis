@@ -56,6 +56,7 @@ RUN apt-get update -qq && \
         python3-pip \
         python3-setuptools \
         python3-wheel \
+        x11-xkb-utils \
         x11proto-bigreqs-dev \
         x11proto-composite-dev \
         x11proto-core-dev \
@@ -84,6 +85,7 @@ RUN apt-get update -qq && \
         x11-xserver-utils \
         xcb-proto \
 	xfonts-utils \
+        xkb-data \
    && rm -rf /var/lib/apt/lists/*
 
 RUN rm -rf /usr/share/doc/* /usr/share/man/*
